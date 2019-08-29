@@ -1,16 +1,27 @@
 import piggy from '../porco.png'
 import React from 'react'
 
-const Nav = () => {
+const Nav = (props) => {
+
 	return (
 		<div className="navWrapper">
+			<br/>
 			<span className="headerText">Hogwarts</span>
-			<div className="TwirlyPig">
-				<a href="https://www.lowes.com/pd/LG-24-7-cu-ft-French-Door-Refrigerator-with-Ice-Maker-Stainless-steel/4746231">
-					<img src={piggy} className="App-logo" alt="piggy" />
-				</a>
+			<br/><br/>
+			<div className="ui buttons">
+				<div >
+					<button className="ui teal basic button" onClick = {props.handleFilter}> {props.state.filtered? "Unfilter Greased":"Filter Greased"}</button>
+				</div>
+				<div >
+					<button className="ui teal basic button" onClick = {props.handleNameSort}> {props.state.sortedNames?"Undo Name Sorting":"Sort by Name"}</button>
+				</div>
+				<div >
+					<button className="ui teal basic button" onClick = {props.handleWeightSort}> {props.state.sortedWeight?"Undo Weight Sorting":"Sort by Weight"}</button>
+				</div>
+				<div>
+					<button className="ui teal basic button" onClick = {props.handleShowAll}> "Show all"</button>
+				</div>
 			</div>
-			<span className="normalText">A React App for County Fair Hog Fans</span>
 		</div>
 	)
 }
