@@ -15,7 +15,7 @@ const hogs = [
   },
   {
     name: 'Cherub',
-    specialty: 'truffle finder',
+    specialty: 'Truffle Finder',
     greased: false,
     weight: 0.7,
     'highest medal achieved': 'gold'
@@ -50,7 +50,7 @@ const hogs = [
   },
   {
     name: 'TruffleShuffle',
-    specialty: 'Finding truffles',
+    specialty: 'Finding Truffles',
     greased: true,
     weight: 4.0,
     'highest medal achieved': 'gold'
@@ -64,7 +64,7 @@ const hogs = [
   },
   {
     name: 'The Prosciutto Concern',
-    specialty: 'truffle finder',
+    specialty: 'Truffle Finder',
     greased: false,
     weight: 2.3,
     'highest medal achieved': 'bronze'
